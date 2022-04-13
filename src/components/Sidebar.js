@@ -3,7 +3,23 @@ import React,{Component} from "react";
 class Sidebar extends Component{
     render(){
         return(
-            <h1>Sidebar</h1>
+            <aside id="sidebar">
+                <div id="nav-blog" className="sidebar-item">
+                    <h3>Puedes hacer esto</h3>
+                    <a href="#" className="btn btn-success">Crear Articulos</a>
+                </div>
+
+                <div id="search" className="sidebar-item">
+                    <h3>Buscador </h3>
+                    <p>Encuentra el Articulo buscado</p>
+
+                    <from >
+                        <input type="text" name="search" />
+                        <input type="submit" name="submit" value="Buscar" className="btn" />
+
+                    </from>
+                </div>
+            </aside>
         );
     }
 }
